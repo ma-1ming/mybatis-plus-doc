@@ -285,6 +285,9 @@ controller 控制器模板
 ### dateType
 - 时间类型对应策略
 - 默认值：`TIME_PACK`
+- `TIME_PACK` 使用 java.time 包下的(java8新的时间类型)
+- `SQL_PACK` 使用 java.sql 包下的
+- `ONLY_DATE` 只使用 java.util.date代替
 
 ::: warning 注意事项:
 如下配置 `%s` 为占位符
